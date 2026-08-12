@@ -3,19 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch app.ts",
+    "start": "tsx app.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "dotenv": "^17.4.2",
     "drizzle-orm": "^1.0.0-rc.4",
     "mysql2": "^3.23.3"
   },
   "devDependencies": {
+    "@types/node": "^26.2.0",
     "drizzle-kit": "^1.0.0-rc.4",
     "tsx": "^4.23.12"
   }
