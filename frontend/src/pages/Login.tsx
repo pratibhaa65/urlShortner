@@ -87,7 +87,7 @@ export function Login() {
         <div className="w-full sm:w-1/2 flex flex-col justify-between p-8">
           <div className="w-full flex-1 flex flex-col justify-center">
             <div className="mb-6">
-              <h1 className="text-3xl font-bold text-gray-900 mb-1">Welcome Back!</h1>
+              <h1 className="text-3xl font-bold text-gray-900 mb-1">Welcome Back</h1>
               <p className="text-gray-600 text-sm">Login to your account</p>
             </div>
 

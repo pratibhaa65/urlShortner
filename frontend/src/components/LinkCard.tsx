@@ -78,7 +78,7 @@ export function LinkCard({ link, onDelete, onEdit }: LinkCardProps) {
       </div>
 
       <div className="mb-4 text-xs text-gray-500">
-        Created{" "}
+        Created At:{" "}
         {new Date(link.createdAt + (link.createdAt.endsWith('Z') ? '' : 'Z')).toLocaleString("en-US", {
           day: "2-digit",
           month: "short",
