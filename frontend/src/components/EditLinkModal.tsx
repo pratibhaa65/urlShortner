@@ -92,7 +92,7 @@ export function EditLinkModal({ link, onClose, onSuccess }: EditLinkModalProps) 
             <button
               type="submit"
               disabled={loading}
-              className="flex-1 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed font-medium transition"
+              className="flex-1 px-4 py-2 bg-[#752121] text-white rounded-lg hover:bg-[#942929] focus:outline-none focus:ring-2 focus:ring-blue-200 disabled:bg-gray-400 disabled:cursor-not-allowed font-medium transition"
             >
               {loading ? "Saving..." : "Save"}
             </button>

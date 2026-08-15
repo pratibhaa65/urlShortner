@@ -29,8 +29,6 @@ async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
   return data as T;
 }
 
-// ---- Types ----
-
 export interface User {
   id: number;
   email: string;
@@ -50,7 +48,7 @@ export interface LinksResponse {
   totalPages: number;
 }
 
-// ---- Auth API ----
+// Auth API
 
 export const authApi = {
   register: (email: string, password: string) =>
@@ -70,7 +68,7 @@ export const authApi = {
   me: () => request<User>("/api/auth/me"),
 };
 
-// ---- Links API ----
+// Links API
 
 export const linksApi = {
   list: (page: number = 1) => request<LinksResponse>(`/api/links?page=${page}`),

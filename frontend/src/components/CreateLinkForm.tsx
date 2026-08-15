@@ -38,7 +38,7 @@ export function CreateLinkForm({ onSuccess }: CreateLinkFormProps) {
 
   return (
     <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md mb-6 border border-gray-200">
-      <h2 className="text-2xl font-bold mb-4 text-gray-900">Create Short Link</h2>
+      <h2 className="text-2xl font-semibold mb-4 font-serif text-[#711f1f]">Shorten Long URLs</h2>
 
       {error && (
         <div className="mb-4 p-4 bg-red-50 border border-red-200 text-red-700 rounded-lg text-sm flex items-start">
@@ -62,7 +62,7 @@ export function CreateLinkForm({ onSuccess }: CreateLinkFormProps) {
             type="url"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
-            placeholder="https://example.com/very/long/url"
+            placeholder="https://urlshortner.com/id123"
             required
             className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-400 transition"
           />
@@ -78,7 +78,7 @@ export function CreateLinkForm({ onSuccess }: CreateLinkFormProps) {
             type="text"
             value={shortCode}
             onChange={(e) => setShortCode(e.target.value)}
-            placeholder="e.g., my-link"
+            placeholder="e.g. link"
             className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-400 transition"
           />
           <p className="text-xs text-gray-500 mt-1">Leave empty for auto-generated code</p>
@@ -88,7 +88,7 @@ export function CreateLinkForm({ onSuccess }: CreateLinkFormProps) {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-linear-to-r bg-emerald-800 hover:bg-green-700 disabled:from-gray-400 disabled:to-gray-400 disabled:cursor-not-allowed text-white font-semibold py-3 rounded-lg transition transform hover:scale-[1.02] active:scale-[0.98]"
+          className="w-40 bg-linear-to-r bg-emerald-800 hover:bg-emerald-700 disabled:from-gray-400 disabled:to-gray-400 disabled:cursor-not-allowed text-white font-semibold py-3 rounded-lg transition transform hover:scale-[1.02] active:scale-[0.98]"
         >
           {loading ? (
             <span className="flex items-center justify-center">
